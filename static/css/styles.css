@@ -1,0 +1,240 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(0, 64, 128, 0.85);
+    color: white;
+    padding: 10px 0;
+    padding-left: 3%;
+}
+
+body, html {
+    height: 100%;
+}
+
+
+/* The hero image */
+.hero-image {
+    background-image: url("../images/northernlights.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;
+    position: relative;
+}
+
+.herotext {
+    margin-top: 0;
+    padding-top: 20px;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    margin-left: 3%;
+}
+
+/*.herotext h1 {
+    margin: 0;
+} */
+
+.underherotext {
+    margin-top: 10px;
+    align-items: center;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    margin-left: 3%;
+}
+
+/*.underherotext p {
+    margin: 0;
+} */
+
+.button-container a {
+    text-decoration: none;
+    color: white;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Ensures the button container is also centered */
+    height: 20vh;
+    margin-top: 10px;
+}
+
+
+.nonroundbutton {
+    width: auto;
+    align-items: center;
+    appearance: none;
+    background-color: transparent;
+    border: 2px solid rgba(0, 64, 128, 0.85);
+    border-radius: 15px;
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+    min-height: 60px;
+    min-width: 200px;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 10%;
+    will-change: transform;
+}
+
+.nonroundbutton:disabled {
+    pointer-events: none;
+}
+
+.nonroundbutton:hover {
+    color: #fff;
+    background-color: rgba(0, 64, 128, 0.85);
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.nonroundbutton:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.roundbutton {
+    border: 2px solid rgba(0, 64, 128, 0.85);
+    width: auto;
+    align-items: center;
+    appearance: none;
+    background-color: rgba(0,102,197,0.4);
+    box-sizing: border-box;
+    color: #ffffff;
+    cursor: pointer;
+    display: inline-block;
+    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+    min-height: 60px;
+    min-width: 200px;
+    outline: none;
+    padding: 16px 24px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    width: 10%;
+    will-change: transform;
+    border-radius: 100px;
+    margin-left: 3%
+}
+
+.roundbutton:disabled {
+    pointer-events: none;
+}
+
+.roundbutton:hover {
+    color: #fff;
+    background-color: rgba(0, 64, 128, 0.85);
+    box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+    transform: translateY(-2px);
+}
+
+.roundbutton:active {
+    box-shadow: none;
+    transform: translateY(0);
+}
+
+.headerlogo img {
+    width: 110px;
+    margin: 0px;
+}
+
+.form {
+    display: flex;
+    justify-content: center; /* Centers items horizontally */
+    align-items: center; /* Centers items vertically */
+    flex-direction: column; /* Stacks inputs vertically */
+    width: 100%; /* Ensures the form takes full width of its parent */
+}
+
+.input {
+    padding: 10px;
+    margin: 10px 0; /* Adds vertical space between input fields */
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    text-align: center; /* Centers text inside the input */
+}
+
+.navigation {
+    text-align: right;
+    padding-right: 3%;
+}
+
+.topimg {
+    width: 100%;
+    height: 30%;
+    object-fit: cover;
+    object-position: center;
+    filter: blur(5px);
+}
+
+.text1 {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+section {
+    padding: 20px;
+}
+
+footer {
+    /* background-color: rgba(0, 64, 128, 0.8); */
+    color: white;
+    padding: 10px 0;
+    padding-left: 3%;
+}
