@@ -73,13 +73,12 @@ body, html {
 }
 
 .button-container {
-    min-height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%; /* Ensures the button container is also centered */
     height: 20vh;
-    margin-top: 10px;
+    margin-top: 5px;
 
 }
 
