@@ -3,6 +3,7 @@ body {
     margin: 0;
     padding: 0;
     overflow: hidden;
+    background-image: url("../images/northernlights.jpg");
 }
 
 html::-webkit-scrollbar {
@@ -30,14 +31,14 @@ body, html {
 
 
 /* The hero image */
-.hero-image {
+/* .hero-image {
     background-image: url("../images/northernlights.jpg");
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
     background-size: auto;
     position: relative;
-}
+} */
 
 .herotext {
     margin-top: 0;
