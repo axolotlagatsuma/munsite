@@ -15,8 +15,13 @@ header {
     align-items: center;
     background-color: rgba(0, 64, 128, 0.85);
     color: white;
-    padding: 10px 0;
+    padding: 8px 0;
     padding-left: 3%;
+}
+
+.headerlogo img {
+    width: 100px;
+    margin: 0px;
 }
 
 body, html {
@@ -73,6 +78,7 @@ body, html {
     width: 100%; /* Ensures the button container is also centered */
     height: 20vh;
     margin-top: 10px;
+
 }
 
 
@@ -166,11 +172,6 @@ body, html {
 .roundbutton:active {
     box-shadow: none;
     transform: translateY(0);
-}
-
-.headerlogo img {
-    width: 110px;
-    margin: 0px;
 }
 
 .form {
