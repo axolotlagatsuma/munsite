@@ -5,9 +5,9 @@ body {
     overflow: hidden;
 }
 
-html::-webkit-scrollbar {
+/* html::-webkit-scrollbar {
     display: none;
-}
+} */
 
 header {
     display: flex;

@@ -6,9 +6,9 @@ body {
     background-image: url("../images/northernlightswgreenhue.jpeg");
 }
 
-html::-webkit-scrollbar {
+/* html::-webkit-scrollbar {
     display: none;
-}
+} */
 
 header {
     display: flex;
