@@ -74,14 +74,13 @@ body, html {
 
 .button-container {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%; /* Ensures the button container is also centered */
-    height: 20vh;
-    margin-top: 5px;
-
+    flex-wrap: wrap; /* Allow buttons to wrap to the next row */
+    justify-content: center; /* Center buttons horizontally */
+    align-items: center; /* Center buttons vertically if needed */
+    gap: 15px; /* Space between buttons */
+    width: 100%; /* Ensure container spans full width */
+    margin: 20px auto; /* Add spacing around the container */
 }
-
 
 .nonroundbutton {
     width: auto;
@@ -131,32 +130,25 @@ body, html {
 
 .roundbutton {
     border: 2px solid rgb(59, 73, 61);
-    width: auto;
-    align-items: center;
-    appearance: none;
-    background-color: rgb(59, 73, 61, 0.09);
-    box-sizing: border-box;
+    background-color: rgba(59, 73, 61, 0.09);
     color: #ffffff;
     cursor: pointer;
     display: inline-block;
-    font-family: Roobert,-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";
+    font-family: Arial, sans-serif;
     font-size: 16px;
     font-weight: 600;
-    line-height: normal;
-    min-height: 60px;
-    min-width: 200px;
-    outline: none;
-    padding: 16px 24px;
     text-align: center;
     text-decoration: none;
-    transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-    width: 10%;
-    will-change: transform;
-    border-radius: 100px;
-    margin-left: 3%
+    border-radius: 50px;
+
+    /* Standardized size */
+    width: 200px; /* Fixed width for consistency */
+    height: 60px; /* Fixed height for uniformity */
+    margin: 10px; /* Space between buttons */
+    padding: 0; /* Ensure padding doesn't affect size */
+    box-sizing: border-box; /* Include border in the size */
+
+    transition: all 0.3s ease-in-out;
 }
 
 .roundbutton:disabled {
@@ -165,7 +157,7 @@ body, html {
 
 .roundbutton:hover {
     color: #fff;
-    background-color: rgb(68, 89, 71, 0.85);
+    background-color: rgba(68, 89, 71, 0.85);
     box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
     transform: translateY(-2px);
 }
@@ -175,12 +167,49 @@ body, html {
     transform: translateY(0);
 }
 
+@media screen and (max-width: 768px) {
+    .roundbutton {
+        font-size: 14px; /* Yazı boyutunu küçült */
+        padding: 8px 16px; /* Daha az padding */
+    }
+
+    .button-container {
+        gap: 8px; /* Butonlar arasındaki boşluk daha az */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .roundbutton {
+        font-size: 12px;
+        min-width: 120px;
+        padding: 6px 12px;
+    }
+}
+
+.letters {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    margin: 15px;
+}
+
+.letters h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
 .form {
     display: flex;
-    justify-content: center; /* Centers items horizontally */
-    align-items: center; /* Centers items vertically */
-    flex-direction: column; /* Stacks inputs vertically */
-    width: 100%; /* Ensures the form takes full width of its parent */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 20px;
 }
 
 .input {
